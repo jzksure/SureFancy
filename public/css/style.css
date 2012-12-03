@@ -8,76 +8,82 @@ body {
     color:#999;
     font:14px/1.3 Arial,sans-serif;
 }
-header {
 
+.clear {
+	clear:both;
+}
+
+ul { list-style:none; }
+
+a:link {color:#28e0db; text-decoration:none;}     
+a:visited {color:#077e7b;}  
+a:hover {color:#a6f2f0;}  
+a:active {color:#a6f2f0;} 
+
+h4 {
+	font-family: 'Sanchez', serif;
+	font-size:20px;
+} 
+
+.italic {font-style:italic;}
+
+.underline {
+	text-decoration:underline;
+}
+
+/*-------- header -------*/
+
+header {
     display:block;
     height:85px;
     position:relative;
     width:100%;
     z-index:100;
+}
 
-}
-header h2{
-    font-size:30px;
-    font-weight:normal;
-    left:35%;
-    margin-left:-400px;
-    padding:12px 0;
-    position:absolute;
-    width:540px;
-}
-header h4{
-	color:#b4b4b4;
-    font-size:14px;
-    font-weight:normal;
-    left:35%;
-    margin-left:-400px;
-    padding:48px 0;
-    position:absolute;
-    width:540px;
-}
-header i {
-	color:#F06;
-}
-header a.jessica,a.jessica:visited{
-    border:none;
-    text-decoration:none;
-    color:#01BAB5;
-	font-family: 'Lobster', cursive;
+
+
+/*------ nav-header ------*/
+
+.header .name  {
+	position: absolute;
+	border:none;
 	font-size:48px;
-    font-weight:normal;
-    left:35%;
-    margin-left:-400px;
-    padding:12px 0;
-    position:absolute;
-    width:320px;
-    
+	font-weight:normal;
+	font-family: 'Sanchez', serif;
+  
 }
-.schurr {
-    font-family: 'Sanchez', serif;
-    color:#000;
+.header .name a {
+	color:#000;
 }
-.J {
-	font-size:50;	
+.header em {
+  	color:#01BAB5;
+  	font-family: 'Lobster', cursive;
+  	font-style:normal;
 }
-header a.stuts,a.stuts:visited{
-    border:none;
-    text-decoration:none;
-    color:#FCF;
-    font-size:14px;
-    left:50%;
-    line-height:31px;
-    margin:23px 0 0 110px;
-    position:absolute;
-    top:0;
+
+.header .logo {
+  	float:right;
+	font-size:23px;
+	height:57px;
+	line-height:24px;
+	background:url(/images/circles.png) no-repeat right; 
+	padding-right: 60px;
+	position:absolute;
+	right:7.5%;
 }
-header .stuts span {
-    font-size:22px;
-    font-weight:bold;
-    margin-left:5px;
+#logo-top {
+ 	display: block;
+ 	text-align: right;
+	color:#000;
+	font-family: 'Sanchez', serif;
 }
-.header_logo {
-  float:right;
+#logo-top em {
+	color:#01BAB5;
+	font-family: 'Lobster', cursive;
+}
+#circles {
+	float:right;	
 }
 .group:after {
   content: "";
@@ -85,12 +91,12 @@ header .stuts span {
   clear: both;
 }
 
-img.facebook
+/*img.facebook
 {
 width:16px;
 height:16.5px;
 background:url(SM-Social-Icons.png) 0 0;
-}
+}*/
 /*img.linkedIn
 {
 width:16px;
@@ -98,7 +104,62 @@ height:16.5px;
 background:url(SM-Social-Icons.png) -91px 0;
 }*/
 
-/* parallax scrolling slider */
+#web{
+	color:#000;
+}
+
+/*--- nav-header DROPDOWN ---*/
+
+.header .nav {
+  margin: 30px 0 0 350px;
+  position: absolute;
+}
+.header .nav li {
+	float:left;
+	margin-right:10px;
+	position:relative;
+}
+
+.header .nav li a{
+	display:block;
+	padding:5px;
+	text-decoration:none;
+}
+.header .nav a:hover{
+	text-decoration:underline;
+}
+
+.header .nav ul{
+	/*background:#fff;*/ /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	/*background:rgba(168,168,168,0);*/ /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+.header .nav ul li{
+	background:#D8D8D8;
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+.header .nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.header .nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+.header .nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	/*background:#A8A8A8;*/
+	text-decoration:underline;
+}
+.header .nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+.header .nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	/*background:#A8A8A8;*/
+	color:#D2FFFD;
+}
+
+
+/*------- parallax scrolling slider --------*/
 .pss_main {
     height:700px;
     position:relative;
@@ -117,7 +178,7 @@ background:url(SM-Social-Icons.png) -91px 0;
     position:absolute;
     top:5%;
     width:70px;
-    z-index:2;
+    z-index:100;
 
     /* css3 transition */
     -webkit-transition:opacity linear 0.3s;
@@ -205,7 +266,6 @@ background:url(SM-Social-Icons.png) -91px 0;
 }
 .pss_slides ul {
     height:100%;
-    list-style:none;
     position:relative;
     top:0;
 
@@ -280,24 +340,26 @@ background:url(SM-Social-Icons.png) -91px 0;
     left:10%;
 }
 
+/*------ bodycopy content --------*/
 .content {
 	margin-top:20px;
 	height:230px;
-	width:75%
+	text-align:justify;
+	width:85%
 }
 
 .copy_left {
-	width:300px;
+	width:22%;
 	float:left;
 }
 
 .copy_middle {
-	width:300px;
+	width:22%;
 }
 
 .copy_right {
 	float:right;
-	width:300px;
+	width:22%;
 }
 
 h3 {
@@ -311,6 +373,68 @@ h3 {
 	padding-right:25px;
 }
 
+#contact {
+	padding-bottom:20px;
+}
+
+/*----- content ------*/
+
+.page-content {
+    margin: 0 auto;
+	padding:0 0 45px 80px;
+	width: 85%;
+}
+
+.page-content h2 {
+	color:#01BAB5;
+	font-family: 'Lobster', cursive;
+	font-size:30px;
+}
+.page-content img{
+	padding-bottom:6px;	
+}
+.page-top{
+	padding:30px 0 45px 0; 
+}
+.page-center{
+}
+.page-center .customer {
+ 	float: left;
+	min-height:230px;
+	padding:0 10px 40px 0;
+	width:45%;
+}
+
+.page-center .customer .copy {
+
+	width:35%;	
+}
+
+.copy {
+	float:right;
+	}
+
+.player {
+	background-color:#9F6; 
+}
+
+#thanks {
+	color:#01BAB5;
+  	font-family: 'Lobster', cursive;
+	font-size:36px;
+  	font-style:normal;
+	height:280px;
+	margin:200px 100px 0 0;
+	text-align:center;
+}
+
+#form {
+	width:300px;
+	margin-bottom:300px;
+}
+
+
+/*----- footer -----*/
 #footer {
 	marign:0;
 	padding-bottom:50px;
@@ -318,69 +442,31 @@ h3 {
 	clear: both;
 }
 	
-#page-wrap {
+#copyright {
+	padding-bottom:15px;
+}
+
+
+/*------ nav footer --------*/
+#nav ul
+{
+margin:0;
+padding:0;
+}
+
+#nav li
+{
+display:inline;
+padding-right:15px;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
 	
-     width: 670px;
-     margin: 0 auto;
-}
 
-#page-wrap h2 {
-	color:#01BAB5;
-	font-family: 'Lobster', cursive;
-	font-size:30px;
-}
-
-.page-content {
-	
-}
-.page-left, .page-right {
-	margin-top:25px;  
-}
-
-.page-left{
-	float: left;
-	padding-bottom:30px; 
-	width: 800px;
-}
-
-.page-right{
-	float:left;
-	
-}
-
-.page-content img{
-	padding-bottom:6px;	
-}
-
-.page-right-image {
-	padding-bottom:40px;
-	width:750px;
-	height:300px;
-}
-.page-right-copy {
-	margin:25px 0 20px 0;
-	float:right;
-	width:250px;
-	
-}
-
-.clear {
-	clear: both;
-}
-
-a:link {color:#28e0db; text-decoration:none;}     
-a:visited {color:#077e7b;}  
-a:hover {color:#a6f2f0;}  
-a:active {color:#a6f2f0;} 
-
-h4 {
-	font-family: 'Sanchez', serif;
-	font-size:20px;
-} 
-
-.italic {font-style:italic;}
-
-.player {
-	background-color:#9F6; 
-}
 

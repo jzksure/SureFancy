@@ -2,7 +2,7 @@
 <html lang="en" >
     <head>
         <meta charset="utf-8" />
-        <title>Jessica Schurr</title>
+        <title>Jessica Schurr | Contact</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/main.js"></script>
@@ -10,44 +10,87 @@
         <link rel="icon" type="image/gif" href="images/favicon.gif" />
     </head>
     <body>
-        <header tabindex="0">
-        	<div class="header_name">
-            	<a  href="index.html" class="jessica"><span class="J">J</span>essica <span class="schurr">Schurr</span></a>
-            </div><!-- end header_name-->
-			<div class="header_logo">
-				<!--<h4>sure <i>fancy</i></h4>-->
-			</div><!-- end header_logo -->
-            
+        <header>
+	        <div class="content header">
+	        	<div class="name">
+	            	<a  href="/index.html" class="jessica">  <em>Jessica</em> Schurr  </a>
+	            </div><!-- end header_name-->
+
+	            <ul class="nav">
+	                <li>
+	                    <a href="work.html">work</a>
+	                    <ul>
+	                        <li><a href="web-design.html">web design</a></li>
+	                        <li><a href="branding.html">branding</a></li>
+	                        <li><a href="motion.html">motion graphics</a></li>
+	                        <li><a href="clients.html">clients</a></li>
+	                    </ul>
+	                </li>
+	                <li>
+	                    <a href="contact.html">contact</a>
+	                </li>
+	                <li>
+	                    <a href="JessicaSchurr-resume.pdf">résumé</a>
+	                </li>
+	            </ul>
+
+				<div class="logo">
+                	
+                	<div id="logo-top">
+						sure <em>Fancy</em>
+                    </div>
+                    <div id="logo-bottom">
+                    	<h3 id="web">web <span>&amp;</span> graphic design</h3>
+                    </div>
+                    
+				</div><!-- end header_logo -->
+               
+            </div>
             
             <!--<a  href="http://www.facebook.com/" target="_blank"><img class="facebook" src="images/SM-Social-Icons.png" width="1" height="1" alt="Facebook" /></a>
             <a  href="http://www.linkedin.com/" target="_blank"><img class="linkedIn" src="images/SM-Social-Icons.png" width="1" height="1" alt="LinkedIn" /></a>
             <a  href="http://www.facebook.com/" target="_blank"><img class="twitter" src="images/SM-Social-Icons.png" width="1" height="1" alt="Facebook" /></a>-->
         </header>
-        
-        <form name="email" id="email" action="/contact" method="post">
-	<fieldset>
-		<ol>
-			<li>
-				<label for="message[name]"> Name:
-				<input type="text" id="message_name" name="message[name]" class="text">
-			</li>
-			<li>
-				<label for="message[email]"> Email Address:
-				<input type="text" id="message_email" name="message[email]" class="text">
-			</li>
-			<li>
-				<label for="message[body]"> Message:
-				<textarea id="message_body" name="message[body]"></textarea>
-			</li>
-		</ol>
-		<input type="submit" value="Send" class="button">
-	</fieldset>
-</form>
+        <div id="form">
+        	<h2>contact</h2>
+            <form name="email" id="email" action="/contact" method="post">
+                <fieldset>
+                    <ol>
+                        <li>
+                            <label for="message[name]"> Name:
+                            <input type="text" id="message_name" name="message[name]" class="text">
+                        </li>
+                        <li>
+                            <label for="message[email]"> Email Address:
+                            <input type="text" id="message_email" name="message[email]" class="text">
+                        </li>
+                        <li>
+                            <label for="message[body]"> Message:
+                            <textarea id="message_body" name="message[body]"></textarea>
+                        </li>
+                    </ol>
+                    <input type="submit" value="Send" class="button">
+                </fieldset>
+            </form>
+        	
+        </div><!-- end form -->
+        <div class="clear"></div>
 
-<div id="footer">
-        	<p>&#169; 2012 Jessica Schurr | Web &amp; Design</p>
-        </div><!-- end footer-->
-    </body>
+        <div id="footer">
+        	<p id="copyright">&#169; 2012 Jessica Schurr | Web &amp; Design</p>
+            <div id="nav">
+            	<ul>
+                	<li><a href="index.html">home</a></li>
+                    <li><a href="web-design.html">web design</a></li>
+                    <li><a href="branding.html">branding</a></li>
+                    <li><a href="motion.html">motion graphics</a></li>
+                   	<li><a href="clients.html">clients</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="JessicaSchurr-resume.pdf">résumé</a></li>
+                </ul>
+            </div><!-- end nav -->
+		</div><!-- end footer-->
+</body>
 </html>
 
 <script>
