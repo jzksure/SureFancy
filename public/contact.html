@@ -18,7 +18,7 @@
 
 	            <ul class="nav">
 	                <li>
-	                    <a href="work.html">work</a>
+	                    <h5>work</h5>
 	                    <ul>
 	                        <li><a href="web-design.html">web design</a></li>
 	                        <li><a href="branding.html">branding</a></li>
@@ -52,27 +52,30 @@
             <a  href="http://www.facebook.com/" target="_blank"><img class="twitter" src="images/SM-Social-Icons.png" width="1" height="1" alt="Facebook" /></a>-->
         </header>
         <div id="form">
-        	<h2>contact</h2>
-            <form name="email" id="email" action="/contact" method="post">
-                <fieldset>
-                    <ol>
-                        <li>
-                            <label for="message[name]"> Name:
-                            <input type="text" id="message_name" name="message[name]" class="text">
-                        </li>
-                        <li>
-                            <label for="message[email]"> Email Address:
-                            <input type="text" id="message_email" name="message[email]" class="text">
-                        </li>
-                        <li>
-                            <label for="message[body]"> Message:
-                            <textarea id="message_body" name="message[body]"></textarea>
-                        </li>
-                    </ol>
-                    <input type="submit" value="Send" class="button">
-                </fieldset>
-            </form>
-        	
+        	<h3>contact</h3>
+            <p>Drop me a line, let's grab coffee!  </p>
+            
+            <div id="formContent">
+                <form name="email" id="email" action="/contact" method="post">
+                    <fieldset>
+                        <ol>
+                            <li>
+                                <label for="message[name]"> Name:
+                                <input type="text" id="message_name" name="message[name]" class="text">
+                            </li>
+                            <li>
+                                <label for="message[email]"> Email Address:
+                                <input type="text" id="message_email" name="message[email]" class="text">
+                            </li>
+                            <li>
+                                <label for="message[body]"> Message:
+                                <textarea id="message_body" name="message[body]"></textarea>
+                            </li>
+                        </ol>
+                        <input type="submit" value="Send" class="button">
+                    </fieldset>
+                </form>
+			</div>        	
         </div><!-- end form -->
         <div class="clear"></div>
 
