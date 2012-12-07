@@ -60,16 +60,16 @@
                     <fieldset>
                         <ol>
                             <li>
-                                <label for="message[name]"> Name:
-                                <input type="text" id="message_name" name="message[name]" class="text">
+                                <label for="message[name]"> Name:</label>
+                                <input type="text" placeholder="Your Name" id="message_name" name="message[name]" class="text">
                             </li>
                             <li>
-                                <label for="message[email]"> Email Address:
-                                <input type="text" id="message_email" name="message[email]" class="text">
+                                <label for="message[email]"> Email Address:</label>
+                                <input type="email" placeholder="Email Address" id="message_email" name="message[email]" class="text">
                             </li>
                             <li>
-                                <label for="message[body]"> Message:
-                                <textarea id="message_body" name="message[body]"></textarea>
+                                <label for="message[body]"> Message:</label>
+                                <textarea id="message_body" placeholder="Message" name="message[body]"></textarea>
                             </li>
                         </ol>
                         <input type="submit" value="Send" class="button">
@@ -99,11 +99,20 @@
 <script>
 	$(document).ready(function() {
 		$("form").submit(function(e) {
-			email = $(this).find("#message_email");
-			if (email.val() == "") {
-				e.preventDefault();			
-				alert("please provide your email");
-			}
+			emailField = $(this).find("#message_email");
+			email = emailField.val();
+			regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if ((email == "") || (!regex.test(email))){
+				e.preventDefault();	
+				emailField.addClass("error");
+				}
+				nameField = $(this).find("#message_name");
+				name = nameField.val();
+				
+				if ((name == "")){
+					e.preventDefault();	
+					nameField.addClass("error");
+					}
 		});
 	});
 </script>

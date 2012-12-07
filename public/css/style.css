@@ -48,7 +48,7 @@ h4 {
 h5 {
 	color:#28e0db;
 	font-size:14px;
-	margin: 5px 0 0 0;
+	margin: 6px 5px 0 0;
 		
 }
 
@@ -370,7 +370,7 @@ background:url(SM-Social-Icons.png) -91px 0;
 /*------ bodycopy content --------*/
 .content {
 	margin-top:20px;
-	height:230px;
+	height:300px;
 	text-align:justify;
 	width:85%
 }
@@ -452,7 +452,6 @@ h3 {
 	font-size:16px;	
 }
 .player {
-	background-color:#9F6; 
 	float:left;
 	margin:0 30px 45px 0;;
 	width:35%;
@@ -464,6 +463,8 @@ h3 {
 .video {
 
 }
+
+
 
 #thanks {
 	color:#01BAB5;
@@ -477,12 +478,53 @@ h3 {
 
 #form {
 	width:300px;
-	margin-bottom:300px;
+	margin: 0 auto;
+	padding:100px 0 100px 0px;
 }
 #formContent {
 	margin-top: 40px;
 }
 
+fieldset {
+  border: 0;
+}
+fieldset li {
+    list-style-type: none;
+    margin: 20px;
+    font-size: 1.22em;
+}
+input.button {
+  background-color:#01BAB5;
+  color:#fff;
+  font-size:1.8em;
+  height:40px;
+  width:80px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; 
+  -khtml-border-radius: 10px; 
+}
+
+input.error, textarea.error {
+  border:2px solid red;
+}
+input.text {
+  font-size:1.4em;
+  height:30px;
+  width:400px;
+}
+textarea {
+  font-size:1.4em;
+  height:140px;
+  width:400px;
+  padding-top:1px;
+}
+label {
+  color:#000;
+  font-family: 'Lobster', cursive;
+	font-size:20px;
+  font-style:normal;
+}
 
 /*----- footer -----*/
 #footer {

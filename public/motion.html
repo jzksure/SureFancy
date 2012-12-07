@@ -6,6 +6,7 @@
         <link href="css/style.css" rel="stylesheet" type="text/css" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		<script type="text/javascript" src="swfobject.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Lobster|Sanchez' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/gif" href="images/favicon.gif" />
     </head>
@@ -88,6 +89,42 @@
                     			<li><h4>number 3</h4></li>
                         		<li><p>branding and website redesign</p></li>
                             </ul>
+
+							<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='300' height='300' id='player1' name='player1'>
+							   <param name='movie' value='player.swf'>
+							   <param name='allowfullscreen' value='true'>
+							   <param name='allowscriptaccess' value='always'>
+							   <param name='flashvars' value='file=playlist.xml'>
+							   <embed id='player1'
+							          name='player1'
+							          src='player.swf'
+							          width='300'
+							          height='300'
+							          allowscriptaccess='always'
+							          allowfullscreen='true'
+							          flashvars="file=playlist.xml"
+							   />
+							</object>
+							
+							<script type="text/javascript">
+							   var flashvars = {
+							      'file':               'playlist.xml',
+							      'autostart':          'true'
+							   };
+
+							   var params = {
+							      'allowfullscreen':    'true',
+							      'allowscriptaccess':  'always',
+							      'bgcolor':            '#ffffff'
+							   };
+
+							   var attributes = {
+							      'id':                 'player1',
+							      'name':               'player1'
+							   };
+
+							   swfobject.embedSWF('player.swf', 'flashContent', '300', '250', '9', 'false', flashvars, params, attributes);
+							</script>
                     	
                     </ul><!-- end copy -->    
                 </li><!-- end description -->
@@ -112,3 +149,5 @@
 		</div><!-- end footer-->
 </body>
 </html>
+
+
