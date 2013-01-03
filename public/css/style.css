@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lobster'), local('Lobster'), url('/fonts/Lobster/Lobster.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sanchez';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sanchez'), local('Sanchez'), url('/fonts/Sanchez/Sanchez-Regular.ttf') format('truetype');
+}
+
 /* Page layout styles */
 *{
     margin:0 auto;
@@ -67,9 +81,6 @@ header {
     width:100%;
     z-index:100;
 }
-
-
-
 /*------ nav-header ------*/
 
 .header .name  {
@@ -370,7 +381,7 @@ background:url(SM-Social-Icons.png) -91px 0;
 /*------ bodycopy content --------*/
 .content {
 	margin-top:20px;
-	height:300px;
+	height:100px;
 	text-align:justify;
 	width:85%
 }
@@ -427,19 +438,21 @@ h3 {
 }
 .page-center .customer {
  	float: left;
-	min-height:230px;
+	min-height:400px;
 	padding:0 100px 40px 0;
 	width:40%;
 }
 
 .page-center .customer .copy {
-
 	width:35%;	
 }
 
 .copy {
 	float:right;
 	
+}
+.copy p{
+  text-align:justify;
 }
 .copy h4{
 	color:#01BAB5;
@@ -449,7 +462,11 @@ h3 {
 .copy h5{
 	color: #999;
 	font-family: 'Sanchez', serif;
-	font-size:16px;	
+	font-size:18px;	
+	margin:10px 0 10px 0;
+}
+.weblink{
+  margin-top:15px;
 }
 .player {
 	float:left;
@@ -457,14 +474,8 @@ h3 {
 	width:35%;
 }
 .player-copy {
-	border:5px solid red;
-		
+	border:5px solid red;		
 }
-.video {
-
-}
-
-
 
 #thanks {
 	color:#01BAB5;
@@ -535,7 +546,7 @@ label {
 }
 	
 #copyright {
-	padding-bottom:15px;
+	padding:150px 0 15px 0;
 }
 
 
