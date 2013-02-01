@@ -199,7 +199,7 @@ background:url(SM-Social-Icons.png) -91px 0;
 
 
 /*------- parallax scrolling slider --------*/
-.pss_main {
+/.pss_main {
     height:700px;
     position:relative;
     width:100%;
@@ -207,7 +207,7 @@ background:url(SM-Social-Icons.png) -91px 0;
 .pss_main input {
     display:none;
 }
-.pss_contr {
+/*.pss_contr {
     background:#01BAB5 url(../images/up.png) no-repeat center center;
     cursor:pointer;
     display:none;
@@ -217,7 +217,7 @@ background:url(SM-Social-Icons.png) -91px 0;
     position:absolute;
     top:5%;
     width:70px;
-    z-index:100;
+    z-index:100;*/
 
     /* css3 transition */
     -webkit-transition:opacity linear 0.3s;
