@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'Lobster';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Lobster'), local('Lobster'), url('/fonts/Lobster/Lobster.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sanchez';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Sanchez'), local('Sanchez'), url('/fonts/Sanchez/Sanchez-Regular.ttf') format('truetype');
+}
+
+/* Page layout styles */
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+body {
+	background-color: #4d4d4d;
+	color: white;
+	font-family: 'Sanchez';
+	font-size: 87.5%;
+	font-weight: 100;
+	line-height: 1.429; 
+	margin: 0; 
+  	padding: 0; 
+  	text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+.clear {
+	clear: both;
+}
+
+ul { 
+	list-style: none; 
+}
+
+a:link {
+	color: #4d4d4d; 
+	text-decoration: none;
+}
+a:hover{
+  color: #09bbb5;
+	text-decoration: underline;
+}
+
+.white {
+  color: white;
+} 
+
+.white a:hover{
+  color: #09bbb5;
+
+}    
+    
+/* Headings */
+/* 28px*/
+h1 {
+  font-size: 1.750em;
+  line-height: 1.1;
+}
+/* 24px*/ 
+h2 {
+  font-size: 1.500em;
+}  
+/* 22px */ 
+h3 {
+  font-size: 1.375em;
+}  
+/* 20px */ 
+h4 {
+  font-size: 1.250em;
+}  
+/* 18px */ 
+h5 {
+  font-size: 1.125em;
+}  
+/* 16px */ 
+h6 {
+  font-size: 1em;
+}  
+ 
+h2, h3, h4, h5, h6 { 
+  line-height: 1.1; 
+  margin-bottom: .8em; 
+  font-weight: 100;
+} 
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
+
